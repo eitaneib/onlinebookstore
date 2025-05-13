@@ -8,7 +8,6 @@ public class User implements Serializable {
     private String emailId;
     private String password;
     private String firstName;
-    private String middleName;
     private String lastName;
     private Long phone;
     private String address;
@@ -40,14 +39,6 @@ public class User implements Serializable {
 
     public String getMiddleName() {
         return middleName;
-    }
-
-    public void setMiddleName(String firstName) {
-        this.middleName = middleName;
-    }
-
-    public String getLastName() {
-        return lastName;
     }
 
     public void setLastName(String lastName) {
