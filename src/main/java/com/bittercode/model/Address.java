@@ -6,6 +6,7 @@ public class Address implements Serializable {
 
     private String addressLine1;
     private String addressLine2;
+    private String addressLine3;
     private String city;
     private String state;
     private String country;
@@ -28,6 +29,14 @@ public class Address implements Serializable {
         this.addressLine2 = addressLine2;
     }
 
+    public String getAddressLine3() {
+        return addressLine1;
+    }
+
+    public void setAddressLine3(String addressLine3) {
+        this.addressLine3 = addressLine3;
+    }
+    
     public String getCity() {
         return city;
     }
