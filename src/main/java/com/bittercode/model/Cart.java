@@ -1,31 +1,22 @@
 package com.bittercode.model;
 
 import java.io.Serializable;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Cart implements Serializable {
 
-    private Book book;
-    private int quantity;
+    private List<Book> books;
 
-    public Cart(Book book, int quantity) {
-        this.book = book;
-        this.quantity = quantity;
+    public Cart(List<Book> books) {
+        this.books = books;
     }
 
-    public Book getBook() {
-        return book;
+    public List<Book> getBooks() {
+        return books;
     }
 
-    public void setBook(Book book) {
-        this.book = book;
+    public void setBooks(List<Book> books) {
+        this.books = books;
     }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
 }
